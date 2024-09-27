@@ -1,0 +1,205 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+.top-header {
+    background-color: #4d148c;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 0.3s ease;
+}
+
+.top-header .social-icons {
+    margin-right: 30px
+}
+
+.top-header .social-icons a {
+    margin-left: 20px;
+}
+
+.top-header img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Main Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #bfb9c4;
+    color: rgb(118, 107, 107);
+    padding: 10px 20px;
+    z-index: 50;
+    top: 30px;  /* Inicialmente debajo del top-header */
+    transition: top 0.3s ease;
+}
+
+header .logo {
+    padding-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding-right: 60px;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: rgb(91, 87, 87);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #4d148c;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login-form button:hover {
+    background-color: #3c106d;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #4d148c;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #4d148c;
+    color: white;
+    padding: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content div {
+    width: 23%;
+}
+
+.footer-content ul li a {
+  color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-bottom ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-bottom ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+.social li {
+    margin-right: 10px;
+}
+
+.social li img {
+    width: 30px;
+    height: 30px;
+}
